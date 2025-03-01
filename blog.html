@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100" >
+    <header class="w-9/12 mx-auto ">
+        <nav class="flex justify-between bg-white rounded-lg p-2">
+           <div class="flex justify-center items-center ">
+            <div>
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <h1 class="text-3xl text-black">Dev <span class="text-3xl font-extrabold">Board</span></h1>
+           </div>
+            <div>
+                <button id="back-btn" class="btn text-white bg-blue-700">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5  w-9/12 mx-auto">
+        <h1 class="text-2xl font-bold text-black text-center">BLOGS</h1>
+
+        <!-- 1 -->
+        <section class="mt-5">
+            <div tabindex="0" class="collapse collapse-open border-base-300 bg-base-200 border">
+                <div class="collapse-title text-2xl font-medium">Question-1: What are the different ways to select an element in the DOM?
+    <p>-------------------------------------------------------------------------------------------</p>
+                </div>
+                
+                <div class="collapse-content">
+                  <p>In the DOM there are most 5 methods is most use to select elements.Below are the 5 most commonly use
+                    1: getElementById() 2: getElementByClassName() 3: getElementByTagName() 4: querySelector() 5: querySelectorAll()
+                   
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div tabindex="0" class="collapse collapse-open border-base-300 bg-base-200 border mt-4">
+                <div class="collapse-title text-2xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    <p>-------------------------------------------------------------------------------------------</p>
+                </div>
+                <div class="collapse-content">
+                  <p>1:innerHtml => When you need to access or modify the HTML structure(tags,attributes,and content)
+                    2:innerText Use case =>When you need the visible text content,and it respects the user's styling(e.g.,hidden text wont't be included).
+                    3:textContent => When you need the raw text content and wants the best performance,regardless of CSS styling or hidden content
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div tabindex="0" class="collapse collapse-open border-base-300 bg-base-200 border mt-4">
+                <div class="collapse-title text-2xl font-medium">Question-3: What is event delegation in the DOM?
+                    <p>-------------------------------------------------------------------------------------------</p>
+                </div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique in jaaScript where a single event listener is added to a parent element instead of multiple listeners on individual child element.The event bubbles up from the child to the parent,Where it is handled efficiently</p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div tabindex="0" class="collapse collapse-open border-base-300 bg-base-200 border mt-4">
+                <div class="collapse-title text-2xl font-medium">Question-4: What is event bubbling in the DOM?
+                    <p>------------------------------------------------------------------------------------------</p>
+                </div>
+                <div class="collapse-content">
+                  <p>The event bubbles up from the child to the parent,Where it is handled efficiently.Where events triggered on child elements travel up the DOM tree to their parent elements.</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div tabindex="0" class="collapse collapse-open border-base-300 bg-base-200 border mt-4">
+                <div class="collapse-title text-2xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?
+                    <p>------------------------------------------------------------------------------------------</p>
+                </div>
+
+                <div class="collapse-content ">
+                  <p> In Js you can create element very simple way => document.createElement(''), Also you can add element in js you just use .add  Example : classList.add("bg-base-200"),
+                    You can also remove element Example: classList.remove("bg-base-200") </p>
+                  
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="./js/blog.js"></script>
+</body>
+</html>
+
+
+
+
