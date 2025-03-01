@@ -1,5 +1,5 @@
 document.getElementById("new-tab").addEventListener("click",function(){
-    window.location.href="./Dic.html"
+    window.location.href="./blog.html"
 });
 
 
