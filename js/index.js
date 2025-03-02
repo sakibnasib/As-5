@@ -42,9 +42,10 @@ function completeTask(taskname, button) {
     hide.classList.add("hidden")
  })
 // date
-let today=new Date();
-let formatteDate=today.toLocaleDateString();
-document.getElementById("date").innerText=formatteDate;
+let today=new Date().toDateString();
+document.getElementById("date").innerText=today;
+
+
 
 const change = document.getElementById("color");
 let randomNum = function () {
