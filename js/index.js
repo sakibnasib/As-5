@@ -34,8 +34,6 @@ function completeTask(taskname, button) {
     const hide=document.getElementById("container");
     hide.classList.add("hidden")
  })
-
-
 // date
 let today=new Date();
 let formatteDate=today.toLocaleDateString();
