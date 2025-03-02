@@ -4,7 +4,7 @@ document.getElementById("new-tab").addEventListener("click",function(){
 
 
 function completeTask(taskname, button) {
-    alert(taskname);
+    alert("Board update successfully ");
 
     let now = new Date();
     let timestring = now.toLocaleTimeString();
@@ -18,9 +18,8 @@ function completeTask(taskname, button) {
     taskCount.textContent = currentCount - 1;
     let currentNumber = parseInt(numberCount.textContent) || 0;
     numberCount.textContent = currentNumber + 1;
-    if(button.id==="btn-6" && currentCount -1  ===0 ){
-        alert("successfully done all task")
-    }
+   
+    
 
     let taskInfo = document.createElement("p");
     taskInfo.classList.add("bg-[#F4F7FF]")
@@ -32,6 +31,9 @@ function completeTask(taskname, button) {
     
     button.disabled = true;
     button.style.backgroundColor = "gray";
+    if( currentCount===1){
+        alert("successfully done all task")
+    }
     
 }
 
