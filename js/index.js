@@ -39,7 +39,7 @@ function completeTask(taskname, button) {
 
  document.getElementById("clearBtn").addEventListener("click",function(){
     const hide=document.getElementById("container");
-    hide.classList.add("hidden")
+     hide.innerHTML="";
  })
 // date
 let today=new Date().toDateString();
