@@ -18,6 +18,9 @@ function completeTask(taskname, button) {
     taskCount.textContent = currentCount - 1;
     let currentNumber = parseInt(numberCount.textContent) || 0;
     numberCount.textContent = currentNumber + 1;
+    if(button.id==="btn-6" && currentCount -1  ===0 ){
+        alert("successfully done all task")
+    }
 
     let taskInfo = document.createElement("p");
     taskInfo.classList.add("bg-[#F4F7FF]")
@@ -26,8 +29,10 @@ function completeTask(taskname, button) {
     taskInfo.textContent = `You have completed the Task ${taskname} at ${timestring}`;
     container.appendChild(taskInfo);
 
+    
     button.disabled = true;
     button.style.backgroundColor = "gray";
+    
 }
 
  document.getElementById("clearBtn").addEventListener("click",function(){
